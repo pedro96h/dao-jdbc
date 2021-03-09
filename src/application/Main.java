@@ -56,10 +56,13 @@ public class Main {
 //		departmentDao.insert(new Department(null, "Jogos"));
 //		System.out.println("Insert completed !");
 		
-		System.out.println("=== TEST 2: department update === ");
-		departmentDao.update(new Department(8, "Jogos"));
-		System.out.println("update completed !");
+//		System.out.println("=== TEST 2: department update === ");
+//		departmentDao.update(new Department(8, "Jogos"));
+//		System.out.println("update completed !");
 		
+		System.out.println("=== TEST 3: department delete === ");
+		departmentDao.deleteById(9);
+		System.out.println("delete completed !");
 		
 		sc.close();
 	}
