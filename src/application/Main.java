@@ -60,9 +60,17 @@ public class Main {
 //		departmentDao.update(new Department(8, "Jogos"));
 //		System.out.println("update completed !");
 		
-		System.out.println("=== TEST 3: department delete === ");
-		departmentDao.deleteById(9);
-		System.out.println("delete completed !");
+//		System.out.println("=== TEST 3: department delete === ");
+//		departmentDao.deleteById(9);
+//		System.out.println("delete completed !");
+		
+		System.out.println("=== TEST 4: department find by id === ");
+		System.out.println(departmentDao.findById(7));
+		System.out.println("find by id completed !");
+		
+		System.out.println("=== TEST 5: department find all === ");
+		departmentDao.findAll().forEach(System.out::println);
+		System.out.println("find all completed !");
 		
 		sc.close();
 	}
