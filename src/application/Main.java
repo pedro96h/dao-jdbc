@@ -51,10 +51,16 @@ public class Main {
 		
 		DepartmentDao departmentDao = DaoFactory.CreateDepartmentDao();
 
-			
-		System.out.println("=== TEST 1: department insert === ");
-		departmentDao.insert(new Department(null, "Jogos"));
-		System.out.println("Insert completed !");
+//			
+//		System.out.println("=== TEST 1: department insert === ");
+//		departmentDao.insert(new Department(null, "Jogos"));
+//		System.out.println("Insert completed !");
+		
+		System.out.println("=== TEST 2: department update === ");
+		departmentDao.update(new Department(8, "Jogos"));
+		System.out.println("update completed !");
+		
+		
 		sc.close();
 	}
 
